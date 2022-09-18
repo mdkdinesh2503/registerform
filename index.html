@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title image -->
+    <link rel="shortcut icon" sizes="32x32" href="https://ak.picdn.net/assets/cms/sstk-favicon-32.png" />
+    <title>R E G I S T E R $$ F O R M</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+
+<body>
+    <img class="wave" src="./image/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="./image/bg.svg" alt="">
+        </div>
+        <div class="login-content">
+            <form action="">
+                <a href=""><img src="./image/avatar2.png"></a>
+                <p class="homepage">Go to <a class="goto" href="">&numsp;<i style="color: green;"
+                            class="fas fa fa-home"></i>Home page</a></p>
+                <h2 class="title">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-spin fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <input type="text" placeholder="Username" class="input">
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-spin fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-spin fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input type="password" placeholder="Password " class="input">
+                    </div>
+                </div>
+                <p class="LoginPage">Already Have an Account &numsp;<a class="goto" href="">Sign-in</a></p>
+                <input type="submit" class="btn" value="Create Account">
+            </form>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    html {
+        font-size: 65%;
+        max-width: 95%;
+    }
+
+    .wave {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 130%;
+        z-index: -1;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 7rem;
+    }
+
+    .img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .img img {
+        width: 900px;
+    }
+
+    .login-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    form {
+        width: 420px;
+    }
+
+    .login-content .homepage {
+        font-size: 2rem;
+        display: block;
+        color: grey;
+    }
+
+    .login-content .homepage .goto,
+    .login-content .LoginPage .goto {
+        text-decoration: none;
+        transition: .3s;
+        color: #125574;
+    }
+
+    .login-content .homepage .goto:hover,
+    .login-content .LoginPage .goto:hover {
+        color: green;
+    }
+
+    .login-content .LoginPage {
+        font-size: 1.5rem;
+        color: grey;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .login-content img {
+        height: 150px;
+        border-radius: 100%;
+    }
+
+    .login-content .title {
+        margin: 15px 0;
+        color: #333;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+    }
+
+    .login-content .input-div {
+        position: relative;
+        display: grid;
+        grid-template-columns: 7% 93%;
+        margin: 11px 0;
+        padding: 8px 0;
+        border-bottom: 2px solid #d9d9d9;
+    }
+
+    .login-content .input-div:hover {
+        border-bottom: 2px solid green;
+        transition: .3s;
+        transform-origin: right;
+    }
+
+    .i {
+        color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-div div {
+        position: relative;
+        height: 45px;
+    }
+
+    ::placeholder {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: grey;
+        font-size: 20px;
+        transition: .3s;
+    }
+
+    .input-div div input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0.5rem 0.7rem;
+        font-size: 25px;
+        font-weight: 300;
+        color: #555;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .login-content .input-div.one {
+        margin-top: 0;
+    }
+
+    .login-content .input-div.two {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .login-content .input-div.pass {
+        margin-bottom: 4px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: .5s;
+        background-size: 200%;
+    }
+
+    .btn:hover {
+        background-position: right;
+    }
+
+    @media (max-width:1300px) {
+        .container {
+            grid-gap: 5rem;
+        }
+
+        .img img {
+            width: 900px;
+        }
+
+        .login-content img {
+            height: 120px;
+        }
+
+        .login-content .title {
+            font-size: 3rem;
+        }
+
+        form {
+            width: 390px;
+        }
+
+        ::placeholder {
+            font-size: 14px;
+        }
+
+        .input-div div input {
+            font-size: 19px;
+        }
+
+        .login-content .input-div {
+            margin: 17px 0;
+            padding: 0;
+        }
+    }
+
+    @media (max-width:1300px) {
+        .img img {
+            width: 800px;
+        }
+
+        .login-content img {
+            height: 100px;
+        }
+
+        .login-content .title {
+            font-size: 2.4rem;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        ::placeholder {
+            font-size: 14px;
+        }
+
+        .input-div div input {
+            font-size: 19px;
+        }
+
+        .login-content .input-div {
+            margin: 10px 0;
+        }
+
+        .btn {
+            height: 40px;
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .img {
+            display: none;
+        }
+
+        .wave {
+            display: none;
+        }
+
+        .login-content {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+    .login-content .LoginPage {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        .login-content img {
+            height: 90px;
+        }
+
+        .login-content .title {
+            font-size: 2rem;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+        }
+
+        .input-div div input {
+            font-size: 14px;
+        }
+
+        .btn {
+            height: 30px;
+            font-size: 1rem;
+        }
+
+        .login-content .input-div {
+            margin: 8px 0;
+        }
+
+        .login-content .homepage {
+            font-size: 1.5rem;
+        }
+
+    }
+</style>
+
+</html>
